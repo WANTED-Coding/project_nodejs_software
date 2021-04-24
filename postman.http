@@ -1,8 +1,8 @@
-POST http://localhost:3333/auth/login
+POST http://18.217.70.108:3000/auth/login
 content-type: application/json
 
 {
-    "email": "sample5@gmail.com",
+    "email": "sample10@gmail.com",
     "password": "lamlamlam"
 }
 
