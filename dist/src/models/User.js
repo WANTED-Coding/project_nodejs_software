@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs');
 
 const Schema = mongoose.Schema;
 
-const User = Schema({
+const User = new Schema({
     username: {
         type: String,
         required: true,
@@ -15,12 +15,7 @@ const User = Schema({
         type: String,
         required: true,
         unique: true,
-        lowercase: true,
-        validate: value => {
-            if (!validator.isEmail(value)) {
-                throw new Error({ error: 'Invalid Email address' });
-            }
-        }
+        lowercase: true
     },
     fullName: {
         type: String,
@@ -51,8 +46,6 @@ const User = Schema({
         type: Number
     }
 
-}, {
-    collection: 'user'
-});
+}, { timestamps: true });
 
 module.exports = mongoose.model('User', User);

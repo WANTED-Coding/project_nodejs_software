@@ -1,5 +1,4 @@
 const express = require('express');
-
 const Controller = require('../controllers/auth.controller');
 const SchemaValidate = require("../validators/auth.validator");
 const Validate = require("../validators");
