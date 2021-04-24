@@ -6,3 +6,24 @@
 2021-04-22 16:17:14:383S: App running in port 3333
 2021-04-22 16:17:44:384S: connect fail!!
 2021-04-22 16:18:02:816S: [0mPOST /auth/login [36m300[0m 10026.108 ms - 30[0m
+2021-04-22 17:06:02:831S: {
+2021-04-22 17:06:02:831S:   ACCESS_TOKEN_SECRET: undefined,
+2021-04-22 17:06:02:831S:   JWT_KEY: undefined,
+2021-04-22 17:06:02:831S:   MONGO_URI: undefined,
+2021-04-22 17:06:02:831S:   PORT: undefined
+2021-04-22 17:06:02:831S: }
+2021-04-22 17:06:03:053S: undefined
+2021-04-22 17:06:03:175S: App running in port undefined
+2021-04-22 17:06:03:175S: connect fail!!
+2021-04-22 21:23:32:373S: {
+2021-04-22 21:23:32:373S:   ACCESS_TOKEN_SECRET: 'PhamTanDat',
+2021-04-22 21:23:32:373S:   JWT_KEY: '"PhamTanDat",',
+2021-04-22 21:23:32:373S:   MONGO_URI: 'mongodb+srv://lamlam3012:lamhoangan3012@cluster0.zhkeb.mongodb.net/EC-21?retryWrites=true&w=majority',
+2021-04-22 21:23:32:373S:   PORT: '3000'
+2021-04-22 21:23:32:373S: }
+2021-04-22 21:23:33:022S: mongodb+srv://lamlam3012:lamhoangan3012@cluster0.zhkeb.mongodb.net/EC-21?retryWrites=true&w=majority
+2021-04-22 21:23:33:232S: App running in port 3000
+2021-04-22 21:23:34:240S: connect successfully!
+2021-04-24 16:45:26:682S: mongodb+srv://lamlam3012:lamhoangan3012@cluster0.zhkeb.mongodb.net/EC-21?retryWrites=true&w=majority
+2021-04-24 16:45:26:876S: App running in port 3000
+2021-04-24 16:45:28:580S: connect successfully!
