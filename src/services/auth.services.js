@@ -1,6 +1,5 @@
 const USER = require("../models/User")
 const bcrypt = require('bcryptjs')
-const { ACCESS_TOKEN_SECRET } = require("../config")
 const jwtServices = require("./jwt.services")
 const moment = require('moment')
 const nodemailer = require('nodemailer')
@@ -8,40 +7,35 @@ const nodemailer = require('nodemailer')
 const register = async (body) => {
   try {
     const { email, username } = body
-    console.log("body", body)
-    //check if email is already in the database
     const emailExist = await USER.findOne({
-      email: body.email
+      email
     })
-    if (emailExist) return {
+    if (emailExist != null) return {
       message: 'Email already exist !!',
       success: false
     }
 
     //check if username is already in the database
     const usernameExist = await USER.findOne({
-      username: body.username
+      username
     })
-    if (usernameExist) return {
+
+    if (usernameExist != null) return {
       message: 'Username already exist !!',
       success: false
     }
 
-    const hashedPassword = await bcrypt.hash(body.password, 8);
-    console.log(`LHA:  ===> file: auth.services.js ===> line 30 ===> hashedPassword`, hashedPassword)
+    const hashedPassword = await bcrypt.hash(body.password, 2);
 
     body.password = hashedPassword
     const newUser = new USER(body)
-    console.log(`LHA:  ===> file: auth.services.js ===> line 36 ===> newUser`, newUser)
 
     const token = jwtServices.createToken(newUser._id);
     const tokenExp = moment().add(30, 'days')
-    console.log(`LHA:  ===> file: auth.services.js ===> line 39 ===> tokenExp`, tokenExp)
 
     newUser.token = token
     newUser.tokenExp = tokenExp
-    console.log("save")
-    await newUser.save()
+    await newUser.save((err) => console.log(err))
     sendMail(email, username)
     return {
       message: 'Successfully registered',
@@ -66,6 +60,7 @@ const login = async (body) => {
     const user = await USER.findOne({
       email
     }).lean()
+    console.log(!user)
     if (!user) {
       return {
         message: 'Invalid email !!',

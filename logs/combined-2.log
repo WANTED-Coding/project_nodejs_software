@@ -1,0 +1,27 @@
+2021-04-24 21:52:48:332S: mongodb+srv://lamlam3012:lamhoangan3012@cluster0.zhkeb.mongodb.net/EC-21?retryWrites=true&w=majority
+Error: bind EADDRINUSE null:3000
+    at listenOnMasterHandle (net.js:1374:18)
+    at rr (internal/cluster/child.js:132:12)
+    at Worker.<anonymous> (internal/cluster/child.js:99:7)
+    at process.onInternalMessage (internal/cluster/utils.js:47:8)
+    at process.emit (events.js:327:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-04-24 21:52:48:962S: mongodb+srv://lamlam3012:lamhoangan3012@cluster0.zhkeb.mongodb.net/EC-21?retryWrites=true&w=majority
+Error: bind EADDRINUSE null:3000
+    at listenOnMasterHandle (net.js:1374:18)
+    at rr (internal/cluster/child.js:132:12)
+    at Worker.<anonymous> (internal/cluster/child.js:99:7)
+    at process.onInternalMessage (internal/cluster/utils.js:47:8)
+    at process.emit (events.js:327:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
+2021-04-24 21:52:49:574S: mongodb+srv://lamlam3012:lamhoangan3012@cluster0.zhkeb.mongodb.net/EC-21?retryWrites=true&w=majority
+Error: bind EADDRINUSE null:3000
+    at listenOnMasterHandle (net.js:1374:18)
+    at rr (internal/cluster/child.js:132:12)
+    at Worker.<anonymous> (internal/cluster/child.js:99:7)
+    at process.onInternalMessage (internal/cluster/utils.js:47:8)
+    at process.emit (events.js:327:22)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)
