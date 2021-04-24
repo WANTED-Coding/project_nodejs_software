@@ -2,20 +2,20 @@ POST http://localhost:3000/auth/login
 content-type: application/json
 
 {
-    "email": "sample30@gmail.com",
+    "email": "sample200@gmail.com",
     "password": "lamlamlam"
 }
 
 ###
 
-POST http://18.217.70.108:3000/auth/register
+POST http://localhost:3000/auth/register
 content-type: application/json
 
 {
-  "username": "208holmesz@gmail.com",
+  "username": "sample2003@gmail.com",
   "password": "lamlamlam",
-  "email":"208holmesz@gmail.com",
-  "fullName":"Pham Tan Dat",
+  "email":"sample2003@gmail.com",
+  "fullName":"Sample",
   "phone":"0947123456"
 }
 

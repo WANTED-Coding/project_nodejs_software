@@ -1,9 +1,10 @@
 module.exports = {
   apps: [
     {
-      name: 'cnpm',
+      name: 'Software',
       script: 'dist/src/server.js',
       args: 'src/server.js',
+      instances: 2,
       wait_ready: true,
       error_file: './logs/err.log',
       out_file: './logs/out.log',
