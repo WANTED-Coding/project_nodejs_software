@@ -98,7 +98,7 @@ const verify = async (req, res) => {
     return controller.sendError(res);
   }
 };
-//Controller  tác động lên services
+
 const changePassword = async (req, res, next) => {
   try {
     const { newPassword, decodeToken } = req.value.body;
